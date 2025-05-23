@@ -1,0 +1,122 @@
+###Create patient
+POST http://localhost:3000/appointments/ HTTP/1.1
+content-type: application/json
+
+{
+  "patientId": "682f3f034d62270f27a8740e",
+  "date": "2026-05-28T09:00:00",
+  "dentist": "Dr. Bassey",
+  "treatment": "Root canal",
+  "status": "Completed",
+  "notes": "Patient tolerated procedure well"
+}
+
+### Get all
+http://localhost:3000/appointments/
+
+### Get by ID
+http://localhost:3000/appointments/68308010b01dadcbb9f323bf
+
+
+### Modify/Update contact
+PUT http://localhost:3000/appointments/682f442d53575f8d18a91b48 HTTP/1.1
+content-type: application/json
+
+{
+    "patientId": "682f3f4d24a746abf34a2fe",
+    "date": "2025-06-01T10:00:00",
+    "dentist": "Dr. Ijeoma",
+    "treatment": "Root canal",
+    "status": "Completed",
+    "notes": "Patient tolerated procedure well"
+}
+
+### Delete
+DELETE http://localhost:3000/appointments/6830623792e739301bb57e30 HTTP/1.1
+
+
+
+# # [
+#   {
+#     "firstName": "Alice",
+#     "lastName": "Nguyen",
+#     "email": "alice.nguyen@example.com",
+#     "phone": "555-1234",
+#     "dob": "1995-07-12",
+#     "address": "101 Maple Street, Lagos",
+#     "medicalHistory": ["asthma"]
+#   },
+#   {
+#     "firstName": "James",
+#     "lastName": "Okafor",
+#     "email": "james.okafor@example.com",
+#     "phone": "555-5678",
+#     "dob": "1988-04-21",
+#     "address": "202 Broad Road, Abuja",
+#     "medicalHistory": ["hypertension", "diabetes"]
+#   },
+#   {
+#     "firstName": "Fatima",
+#     "lastName": "Bello",
+#     "email": "fatima.bello@example.com",
+#     "phone": "555-9876",
+#     "dob": "2000-01-05",
+#     "address": "303 Zenith Close, Kano",
+#     "medicalHistory": []
+#   },
+#   {
+#     "firstName": "David",
+#     "lastName": "Adewale",
+#     "email": "david.adewale@example.com",
+#     "phone": "555-2345",
+#     "dob": "1992-09-15",
+#     "address": "404 Unity Ave, Ibadan",
+#     "medicalHistory": ["sickle cell anemia"]
+#   },
+#   {
+#     "firstName": "Chidera",
+#     "lastName": "Eze",
+#     "email": "chidera.eze@example.com",
+#     "phone": "555-3456",
+#     "dob": "1997-11-30",
+#     "address": "505 Harmony Lane, Enugu",
+#     "medicalHistory": ["allergies"]
+#   }
+# ]
+
+
+# const appointments = [
+#       {
+#         patientId: patients[0]._id,
+#         date: new Date('2025-06-01T10:00:00'),
+#         dentist: 'Dr. Okon',
+#         treatment: 'Teeth Cleaning',
+#         status: 'Scheduled',
+#         notes: 'First time visit'
+#       },
+#       {
+#         patientId: patients[1]._id,
+#         date: new Date('2025-06-02T14:30:00'),
+#         dentist: 'Dr. Musa',
+#         treatment: 'Filling - upper left molar',
+#         status: 'Scheduled',
+#         notes: ''
+#       },
+#       
+#       {
+#         patientId: patients[3]._id,
+#         date: new Date('2025-06-05T13:00:00'),
+#         dentist: 'Dr. Chike',
+#         treatment: 'Extraction - lower wisdom tooth',
+#         status: 'Scheduled',
+#         notes: 'Bring X-ray'
+#       },
+#       {
+#         patientId: patients[4]._id,
+#         date: new Date('2025-06-10T16:00:00'),
+#         dentist: 'Dr. Amaka',
+#         treatment: 'Checkup & Fluoride Treatment',
+#         status: 'Cancelled',
+#         notes: 'Patient rescheduled'
+#       }
+#     ]

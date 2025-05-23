@@ -1,0 +1,45 @@
+{
+  "name": "cse341-project",
+  "version": "1.0.0",
+  "description": "Dental Appointment API",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "swagger": "node ./documentation/swagger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EM-OBI/cse341-project.git"
+  },
+  "author": "Godwin Bassey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EM-OBI/cse341-project/issues"
+  },
+  "homepage": "https://github.com/EM-OBI/cse341-project#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "http-errors": "^2.0.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "swagger-autogen": "^2.23.7"
+  }
+}
