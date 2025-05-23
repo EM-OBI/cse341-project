@@ -3,7 +3,7 @@ POST http://localhost:3000/patients/ HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Big",
+    "firstNa": "Big",
     "lastName": "Mike",
     "email": "big.mike@example.com",
     "phoneNumber": "555-2019",
@@ -20,11 +20,11 @@ http://localhost:3000/patients/682f3f034d62270f27a8740e
 
 
 ### Modify/Update patient
-PUT http://localhost:3000/patients/682f3f034d62270f27a8740 HTTP/1.1
+PUT http://localhost:3000/patients/682f3f034d62270f27a8740e HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Big",
+    "firstName": "Small",
     "lastName": "Mike",
     "email": "big.mike@example.com",
     "phoneNumber": "555-2019",
