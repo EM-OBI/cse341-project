@@ -5,7 +5,9 @@ const doc = {
     title: "Dental appointments API",
     description: "Add, view, edit and delete patient and appointment"
   },
-  host: "localhost:3000"
+  host: process.env.NODE_ENV === 'production'
+  ? 'your-app-name.onrender.com'
+  : 'localhost:3000',
 };
 
 const outputFile = "./swagger-output.json";

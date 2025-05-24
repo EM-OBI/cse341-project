@@ -12,8 +12,9 @@ const appointmentRoutes = require("./src/routes/appointmentRoutes");
 const createError = require("http-errors");
 
 app.use(cors());
-app.use(bodyParser.json());
+pp.use(bodyParser.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 mongoose.set("strictQuery", false);
 
