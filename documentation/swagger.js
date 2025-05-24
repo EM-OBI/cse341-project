@@ -6,7 +6,7 @@ const doc = {
     description: "Add, view, edit and delete patient and appointment"
   },
   host: process.env.NODE_ENV === 'production'
-  ? 'your-app-name.onrender.com'
+  ? 'https://cse341-project-bgro.onrender.com'
   : 'localhost:3000',
 };
 
