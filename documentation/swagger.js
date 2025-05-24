@@ -8,6 +8,7 @@ const doc = {
   host: process.env.NODE_ENV === 'production'
   ? 'cse341-project-bgro.onrender.com'
   : 'localhost:3000',
+  schemes: ['https']
 };
 
 
