@@ -33,7 +33,7 @@ passport.use(
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL:
         process.env.NODE_ENV === "production"
-          ? "cse341-project-bgro.onrender.com/oauth2/callback"
+          ? "https://cse341-project-bgro.onrender.com/oauth2/callback"
           : "http://localhost:3000/oauth2/callback"
     },
     (accessToken, refreshToken, profile, done) => {
