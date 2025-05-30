@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/EM-OBI/cse341-project#readme",
   "dependencies": {
+    "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
