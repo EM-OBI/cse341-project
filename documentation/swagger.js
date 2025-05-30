@@ -5,12 +5,10 @@ const doc = {
     title: "Dental appointments API",
     description: "Add, view, edit and delete patient and appointment"
   },
-  host: process.env.NODE_ENV === 'production'
-  ? 'cse341-project-bgro.onrender.com'
-  : 'localhost:3000',
-  schemes: ['https']
+  host:
+    process.env.NODE_ENV === "production" ? "cse341-project-bgro.onrender.com" : "localhost:3000",
+  schemes: [process.env.NODE_ENV === "production" ? "https" : "http"]
 };
-
 
 const outputFile = "./swagger-output.json";
 const routes = ["../server.js"];

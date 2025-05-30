@@ -7,9 +7,7 @@
   },
   "host": "localhost:3000",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/": {
       "get": {
@@ -64,9 +62,7 @@
       },
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "default": {
             "description": ""
@@ -77,9 +73,7 @@
     "/patients/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -197,9 +191,7 @@
       },
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "default": {
             "description": ""
@@ -210,9 +202,7 @@
     "/appointments/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -280,6 +270,36 @@
             "type": "string"
           }
         ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/oauth2/login": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/oauth2/callback": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/oauth2/logout": {
+      "get": {
+        "description": "",
         "responses": {
           "default": {
             "description": ""
